@@ -45,6 +45,7 @@ PS：如果有信息输入错误需要更改时，请按住 Ctrl 键后再按删
 这种输出结果说明我们的服务器已经安装 Google BBR 拥塞控制算法，此时已经无法继续安装锐速。  
 
 ## 三、CentOS6 x64 系统安装锐速  
+
 若第二步中确定服务器为 CentOS6 x64 系统则看这一步。
 
 按照下图提示，我们继续复制下列命令：  
@@ -58,6 +59,26 @@ PS：如果有信息输入错误需要更改时，请按住 Ctrl 键后再按删
 设置完三项信息完成后，系统会完成锐速安装并输出锐速的运行状态。按照下图提示，当出现红框内信息时说明锐速已完成安装并开机自启动。  
 ![](img/centos6-serverspeeder4.png "centos6-serverspeeder4")  
 
-## 四、CentOS7 x64 系统安装锐速
+## 四、CentOS7 x64 系统安装锐速  
 
+若第二步中确定服务器为 CentOS7 x64 系统则看这一步。
+
+按照下图提示，我们继续复制下列命令：  
+```wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/liuyongzheng07/shadowsocks/master/serverSpeeder/rskernel.sh && bash rskernel.sh```  
+然后回到 Xshell 软件，鼠标右键选择粘贴，回车继续。  
+![](img/centos7-serverspeeder1.png "centos7-serverspeeder1")  
+回车后系统会自动下载脚本并执行更换内核命令。按照下图提示，我们可以看到当前系统确实为 CentOS7，等待内核更换完毕后系统会自动重启并断开连接。  
+![](img/centos7-serverspeeder2.png "centos7-serverspeeder2")   
+系统重启后，Xshell 软件会断开连接。等待 3~5 分钟服务器即可重启完毕，我们重新连接服务器，按照下图提示，我们继续复制命令：  
+```yum install net-tools -y && wget --no-check-certificate -O appex.sh https://github.com/liuyongzheng07/shadowsocks/blob/master/serverSpeeder/appex.sh && bash appex.sh install```  
+然后回到 Xshell 软件，鼠标右键选择粘贴，回车继续。  
+![](img/centos7-serverspeeder3.png "centos7-serverspeeder3")  
+回车后系统会自动下载脚本并执行。按照下图提示，我们直接回车继续即可。  
+![](img/centos7-serverspeeder4.png "centos7-serverspeeder4")  
+回车继续后系统会自动安装锐速，同时会先后要求我们设置锐速的三项信息。按照下图提示，我们每次都直接回车继续即可。  
+![](img/centos7-serverspeeder5.png "centos7-serverspeeder5")  
+设置完三项信息完成后，系统会完成锐速安装并输出锐速的运行状态。按照下图提示，当出现红框内信息时说明锐速已完成安装并开机自启动。  
+![](img/centos7-serverspeeder6.png "centos7-serverspeeder6")  
+
+参考：<a href="https://www.vultrcn.com/7.html" target="_blank">https://www.vultrcn.com/7.html</a>  
 
