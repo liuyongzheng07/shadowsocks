@@ -4,3 +4,5 @@
 
 ## 英文版：（如果中文版执行后出现乱码，那么请使用这个）  
 'wget --no-check-certificate -O shadowsocks-libev.sh https://raw.githubusercontent.com/liuyongzheng07/shadowsocks/master/shadowsocks-libev.sh && bash shadowsocks-libev.sh'
+
+`代码内容`
