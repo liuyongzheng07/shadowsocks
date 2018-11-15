@@ -15,3 +15,5 @@ PS：如果有信息输入错误需要更改时，请按住 Ctrl 键后再按删
 大约 2~5 分钟即可安装完成，完成后保存SS信息，就能使用了。  
 ![](img/shadowsocks4.png "shadowsocks4")  
 
+参考：[https://segmentfault.com/a/1190000015899470](https://segmentfault.com/a/1190000015899470)
+
