@@ -44,3 +44,20 @@ PS：如果有信息输入错误需要更改时，请按住 Ctrl 键后再按删
 3、结果以 4 开头，例如 4.12.10-1.el7.elrepo.x86_64。  
 这种输出结果说明我们的服务器已经安装 Google BBR 拥塞控制算法，此时已经无法继续安装锐速。  
 
+## 三、CentOS6 x64 系统安装锐速  
+若第二步中确定服务器为 CentOS6 x64 系统则看这一步。
+
+按照下图提示，我们继续复制下列命令：  
+```wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/liuyongzheng07/shadowsocks/master/serverSpeeder/appex.sh && bash appex.sh install '2.6.32-642.el6.x86_64'```    
+然后回到 Xshell 软件，鼠标右键选择粘贴，回车继续。  
+![](img/centos6-serverspeeder1.png "centos6-serverspeeder1")   
+回车后系统会自动下载脚本并执行。按照下图提示，我们直接回车继续即可。  
+![](img/centos6-serverspeeder2.png "centos6-serverspeeder2")   
+回车继续后系统会自动安装锐速，同时会先后要求我们设置锐速的三项信息。按照下图提示，我们每次都直接回车继续即可。  
+![](img/centos6-serverspeeder3.png "centos6-serverspeeder3")  
+设置完三项信息完成后，系统会完成锐速安装并输出锐速的运行状态。按照下图提示，当出现红框内信息时说明锐速已完成安装并开机自启动。  
+![](img/centos6-serverspeeder4.png "centos6-serverspeeder4")  
+
+## 四、CentOS7 x64 系统安装锐速
+
+
