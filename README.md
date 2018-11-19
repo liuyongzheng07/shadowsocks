@@ -49,7 +49,7 @@ PS：如果有信息输入错误需要更改时，请按住 Ctrl 键后再按删
 若第二步中确定服务器为 CentOS6 x64 系统则看这一步。
 
 按照下图提示，我们继续复制下列命令：  
-```wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/suifeng07/shadowsocks/master/serverSpeeder/appex.sh && bash appex.sh install '2.6.32-642.el6.x86_64'```    
+```wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/suifeng07/shadowsocks/master/serverSpeeder/centos6appex.sh && bash appex.sh install '2.6.32-642.el6.x86_64'```    
 然后回到 Xshell 软件，鼠标右键选择粘贴，回车继续。  
 ![](img/centos6-serverspeeder1.png "centos6-serverspeeder1")   
 回车后系统会自动下载脚本并执行。按照下图提示，我们直接回车继续即可。  
@@ -70,7 +70,7 @@ PS：如果有信息输入错误需要更改时，请按住 Ctrl 键后再按删
 回车后系统会自动下载脚本并执行更换内核命令。按照下图提示，我们可以看到当前系统确实为 CentOS7，等待内核更换完毕后系统会自动重启并断开连接。  
 ![](img/centos7-serverspeeder2.png "centos7-serverspeeder2")   
 系统重启后，Xshell 软件会断开连接。等待 3~5 分钟服务器即可重启完毕，我们重新连接服务器，按照下图提示，我们继续复制命令：  
-```yum install net-tools -y && wget --no-check-certificate -O appex.sh https://github.com/suifeng07/shadowsocks/blob/master/serverSpeeder/appex.sh && bash appex.sh install```  
+```yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/suifeng07/shadowsocks/master/serverSpeeder/centos7appex.sh && bash appex.sh install```  
 然后回到 Xshell 软件，鼠标右键选择粘贴，回车继续。  
 ![](img/centos7-serverspeeder3.png "centos7-serverspeeder3")  
 回车后系统会自动下载脚本并执行。按照下图提示，我们直接回车继续即可。  
