@@ -99,3 +99,14 @@ CentOS 8 默认内核版本为 4.18.x，内核版本高于 4.9 就可以直接�
 
 成功的话显示    
 ```tcp_bbr   20480   0```  
+
+## 六、防火墙
+centos 7和centos 8    
+
+```firewall-cmd --permanent --add-port=123456/tcp```  
+```firewall-cmd --zone=public --add-port=123456/tcp --permanent & sudo firewall-cmd --permanent --zone=public --add-service=http & sudo firewall-cmd --permanent --zone=public --add-service=https```  
+```firewall-cmd --reload``` 
+ 
+centos 6    
+```iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 123456 -j ACCEPT```    
+```service iptables restart```    
