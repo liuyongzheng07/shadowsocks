@@ -110,3 +110,7 @@ centos 7和centos 8
 centos 6    
 ```iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 123456 -j ACCEPT```    
 ```service iptables restart```    
+
+阿里云用下边的方法      
+https://www.xiaokunli.com/2019/10/12/CentOS%207%E5%92%8C8%E6%90%AD%E5%BB%BASS/    
+
