@@ -82,3 +82,16 @@ PS：如果有信息输入错误需要更改时，请按住 Ctrl 键后再按删
 
 参考：<a href="https://www.vultrcn.com/7.html" target="_blank">https://www.vultrcn.com/7.html</a>  
 
+## 五、CentOS8 x64 安装bbr开启bbr
+
+CentOS 8 默认内核版本为 4.18.x，内核版本高于 4.9 就可以直接开启 BBR
+
+开启BBR：  
+```echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf```  
+```echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf```  
+ 
+sysctl -p：  
+```sysctl -n net.ipv4.tcp_congestion_control```  
+```lsmod | grep bbr```  
+
+
