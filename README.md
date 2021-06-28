@@ -90,7 +90,10 @@ CentOS 8 默认内核版本为 4.18.x，内核版本高于 4.9 就可以直接�
 ```echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf```  
 ```echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf```  
  
-sysctl -p：  
+保存退出后，执行下边的命令使配置生效    
+```sysctl -p```  
+
+检查 BBR 是否开启成功    
 ```sysctl -n net.ipv4.tcp_congestion_control```  
 ```lsmod | grep bbr```  
 
