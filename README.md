@@ -97,4 +97,5 @@ CentOS 8 默认内核版本为 4.18.x，内核版本高于 4.9 就可以直接�
 ```sysctl -n net.ipv4.tcp_congestion_control```  
 ```lsmod | grep bbr```  
 
-
+成功的话显示    
+```tcp_bbr   20480   0```  
